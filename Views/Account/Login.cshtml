@@ -1,0 +1,14 @@
+@model SimpleLoginApp.Models.User
+
+<h2>Login</h2>
+
+<form method="post">
+    Username: <input asp-for="Username" /><br />
+    Password: <input asp-for="Password" type="password" /><br />
+    <button type="submit">Login</button>
+</form>
+
+@if (ViewBag.Error != null)
+{
+    <p style="color:red">@ViewBag.Error</p>
+}

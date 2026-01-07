@@ -1,0 +1,11 @@
+@model SimpleLoginApp.Models.User
+
+<h2>Register</h2>
+
+<form method="post">
+    Username: <input asp-for="Username" /><br />
+    Password: <input asp-for="Password" type="password" /><br />
+    <button type="submit">Register</button>
+</form>
+
+<a href="/Account/Login">Go to Login</a>
